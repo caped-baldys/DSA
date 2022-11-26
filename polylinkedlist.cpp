@@ -117,8 +117,9 @@ public:
 int main()
 {
     
-    cout << "\n Poly 1 \n";
     Linkedlist poly1, poly2;
+    
+    cout << "\n Poly 1 \n";
     //10x^4+14x^3+13x^2+11x^1
     poly1.append(10, 4);
     poly1.append(14, 3);
