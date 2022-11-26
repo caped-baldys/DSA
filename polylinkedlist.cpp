@@ -29,7 +29,7 @@ public:
     Node *head = NULL;
     //a pointer at tail for easy , fast appending
     Node *tail = NULL;
-    // to add data to the list
+    // to add data to the list (prototype of function)
     void append(int, int);
     // to print the list
     void printL();
