@@ -71,9 +71,7 @@ x = int(input('Enter the element:'))
 n = len(arr)
 #x = 235
 ind = fibMonaccianSearch(arr, x, n)
-if ind>=0:
-    print("Found at index:",ind)
-else:
-    print(x,"isn't present in the array");
+print("Found at index:",ind)
+
 
 # This code is contributed by rishabh_jain
