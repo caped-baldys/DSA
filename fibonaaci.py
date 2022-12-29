@@ -60,10 +60,16 @@ def fibMonaccianSearch(arr, x, n):
 
 
 # Driver Code
-arr = [10, 22, 35, 40, 45, 50,
-	80, 82, 85, 90, 100,235]
+arr = []
+size =int(input('size of array'))
+
+for i in range(size):
+    temp = int(input(f'{i}:>'))
+    arr.append(temp)
+
+x = int(input('Enter the element:'))
 n = len(arr)
-x = 235
+#x = 235
 ind = fibMonaccianSearch(arr, x, n)
 if ind>=0:
     print("Found at index:",ind)
