@@ -7,12 +7,14 @@ public:
     int coeff;
     int pow;
     Node *next;
+    //default constructor without arguments
     Node()
     {
         coeff = 0;
         pow = 0;
         next = NULL;
     }
+    //constructor with arguments
     Node(int c, int p)
     {
         coeff = c;
@@ -25,8 +27,9 @@ class Linkedlist
 {
 public:
     Node *head = NULL;
+    //a pointer at tail for easy , fast appending
     Node *tail = NULL;
-    // to add data to the list
+    // to add data to the list (prototype of function)
     void append(int, int);
     // to print the list
     void printL();
@@ -53,7 +56,7 @@ void Linkedlist::printL()
 {
     Node *temp = head;
     while (temp != NULL)
-    {
+    {   //properly printing the polynomial
         if (temp->next == NULL)
             cout << temp->coeff << "x"
                  << "^" << temp->pow;
@@ -113,9 +116,11 @@ public:
 // Driver code
 int main()
 {
-
-    cout << "\n Poly 1 \n";
+    
     Linkedlist poly1, poly2;
+    
+    cout << "\n Poly 1 \n";
+    //10x^4+14x^3+13x^2+11x^1
     poly1.append(10, 4);
     poly1.append(14, 3);
     poly1.append(13, 2);
@@ -128,10 +133,9 @@ int main()
     poly2.append(23, 3);
     poly2.append(34, 1);
     poly2.printL();
-    // append(&head1,&tail1,10,12);
-    // printL(head1);
+    //creating obj for result
     SolutionAdd result;
-    cout << "\nResult::\n";
+    cout << "\n Result::\n";
     result.Add(poly1, poly2);
     cout << "\n";
     result.sol.printL();
