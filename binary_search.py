@@ -1,6 +1,6 @@
 #binary works on sorted array
 #O(log n)
-
+#divide conqure
 
 size =int(input('size of array'))
 
