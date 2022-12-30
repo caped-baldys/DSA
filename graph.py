@@ -21,7 +21,7 @@ class Graph():
 
     def print_adj_list(self):
         for node in self.node:
-            print(node,'=',self.adj_list[node])
+            print(node,'->',self.adj_list[node])
 
 
 nodes_1= ["A","B","C","D","E"]
