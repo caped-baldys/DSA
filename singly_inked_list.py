@@ -17,7 +17,7 @@ class Slinked():
             temp = temp.nxt
 
     def append(self,data):
-        temp = list_link.head
+        temp = self.head
 
         while temp.nxt is not None:
             temp = temp.nxt
@@ -46,8 +46,6 @@ list_link = Slinked()
 list_link.AtBegining(11)
 list_link.append(10)
 list_link.append(90)
-list_link.printList()
-
-print('Complete')
 list_link.Inbetween(10, 30)
 list_link.printList()
+print('Complete')
